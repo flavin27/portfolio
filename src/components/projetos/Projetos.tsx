@@ -32,17 +32,31 @@ const Projetos = () => {
             <h1 className='text-4xl font-bold text-gray-800'>
                 Projetos
             </h1>
-            <div className='pt-12'>
+            <div className='flex flex-wrap gap-6 pt-12'>
                 <ProjectCard 
                 title="Bot Bandejão UERJ"
                 link="https://github.com/flavin27/bot-bandejao-uerj-v2"
                 technologies="PHP, Docker"
-                description="Projeto feito em php para utilizar a API do Twitter, por meio do docker, para postar tweets diários visando informar o ccardápio do restaurente universitário"
+                description="Projeto feito em PHP para utilizar a API do Twitter, por meio do Docker, para postar tweets diários visando informar o cardápio do restaurante universitário."
+                image="/chrome_pOk86xJWXP.png"
+                />
+                                <ProjectCard 
+                title="Bot Bandejão UERJ"
+                link="https://github.com/flavin27/bot-bandejao-uerj-v2"
+                technologies="PHP, Docker"
+                description="Projeto feito em PHP para utilizar a API do Twitter, por meio do Docker, para postar tweets diários visando informar o cardápio do restaurante universitário."
+                image="/chrome_pOk86xJWXP.png"
+                />
+                                <ProjectCard 
+                title="Bot Bandejão UERJ"
+                link="https://github.com/flavin27/bot-bandejao-uerj-v2"
+                technologies="PHP, Docker"
+                description="Projeto feito em PHP para utilizar a API do Twitter, por meio do Docker, para postar tweets diários visando informar o cardápio do restaurante universitário."
                 image="/chrome_pOk86xJWXP.png"
                 />
             </div>
-        </section>
-    );
-};
-
-export default Projetos;
+            </section>
+        );
+    };
+    
+    export default Projetos;
