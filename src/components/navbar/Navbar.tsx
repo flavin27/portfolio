@@ -27,12 +27,6 @@ const Navbar = () => {
                 >
                     Projetos
                 </button>
-                <button
-                    onClick={() => scrollToSection('contato')}
-                    className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-blue-400"
-                >
-                    Contato
-                </button>
             </div>
         </nav>
     );
