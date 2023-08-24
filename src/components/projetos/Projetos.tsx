@@ -36,7 +36,7 @@ const Projetos = () => {
                 <ProjectCard 
                 title="Bot Bandejão UERJ"
                 link="https://github.com/flavin27/bot-bandejao-uerj-v2"
-                technologies="PHP, Docker"
+                technologies="PHP, Testes Unitários, Docker"
                 description="Projeto feito em PHP para utilizar a API do Twitter, por meio do Docker, para postar tweets diários visando informar o cardápio do restaurante universitário."
                 image="/chrome_pOk86xJWXP.png"
                 />
