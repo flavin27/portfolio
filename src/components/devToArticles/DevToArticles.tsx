@@ -19,37 +19,37 @@ const DevToArticles: React.FC = () => {
         <div className='pt-12'>
             <ul>
                 {articles.map((article) => (
-                    <div className="max-w-md bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform duration-200">
-                    <div className="flex items-center justify-center">
-                        <Image className="h-48 w-48 object-cover" src={article.cover_image} alt={article.title} layout="responsive" width={500} height={300}/>
+                    <div key={article.id} className="max-w-md bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform duration-200">
+                        <div className="flex items-center justify-center">
+                            <Image className="h-48 w-48 object-cover" src={article.cover_image} alt={article.title} layout="responsive" width={500} height={300}/>
+                        </div>
+                        <div className="p-6">
+                            <h3 className="text-2xl font-semibold text-gray-800 mb-2">
+                                <a
+                                    href={article.url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-blue-500 hover:underline"
+                                >
+                                    {article.title}
+                                </a>
+                            </h3>
+                            <p className="text-gray-600 mb-4">
+                                Publicado em: {article.readable_publish_date}
+                            </p>
+                            <p className="text-gray-700 text-base">{article.description}</p>
+                        </div>
+                        <div className="px-6 py-4 bg-gray-100">
+                            <a
+                                href={article.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                            >
+                                Ler Artigo
+                            </a>
+                        </div>
                     </div>
-                    <div className="p-6">
-                        <h3 className="text-2xl font-semibold text-gray-800 mb-2">
-                        <a
-                            href={article.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-blue-500 hover:underline"
-                        >
-                            {article.title}
-                        </a>
-                        </h3>
-                        <p className="text-gray-600 mb-4">
-                        Publicado em: {article.readable_publish_date}
-                        </p>
-                        <p className="text-gray-700 text-base">{article.description}</p>
-                    </div>
-                    <div className="px-6 py-4 bg-gray-100">
-                        <a
-                        href={article.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-                        >
-                        Ler Artigo
-                        </a>
-                    </div>
-                    </div>                                                                          
                 ))}
             </ul>
         </div>

@@ -7,6 +7,7 @@ interface Article {
     url: string;
     readable_publish_date: string
     cover_image: string
+    id:string
 }
 
 const useFetch = (url: string) => {
