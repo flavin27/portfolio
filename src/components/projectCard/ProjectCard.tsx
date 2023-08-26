@@ -11,7 +11,7 @@ import Image from 'next/image';
 
 const ProjectCard = ({ title, link, technologies, description, image }: ProjectCardProps) => {
     return (
-        <div className="max-w-md bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105">
+        <div className="max-w-md bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform duration-200">
             <div className="flex items-center justify-center">
                 <Image className="h-48 w-48 object-cover" src={image} alt={title} layout="responsive" width={500} height={300}/>
             </div>
