@@ -1,4 +1,5 @@
 'use client'
+import Image from 'next/image';
 import useFetch from '../../hooks/useFetch/useFetch';
 
 const DevToArticles: React.FC = () => {
@@ -20,11 +21,7 @@ const DevToArticles: React.FC = () => {
                 {articles.map((article) => (
                     <div className="max-w-md bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform duration-200">
                     <div className="flex items-center justify-center">
-                        <img
-                        className="h-48 w-full object-cover"
-                        src={article.cover_image}
-                        alt={article.title}
-                        />
+                        <Image className="h-48 w-48 object-cover" src={article.cover_image} alt={article.title} layout="responsive" width={500} height={300}/>
                     </div>
                     <div className="p-6">
                         <h3 className="text-2xl font-semibold text-gray-800 mb-2">
