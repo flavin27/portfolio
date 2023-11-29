@@ -9,6 +9,7 @@ function Tecnologias() {
                 <li>- Laravel</li>
                 <li>- Typescript</li>
                 <li>- NodeJS</li>
+                <li>- Python</li>
                 <li>- SQL</li>
                 <li>- Docker</li>
                 <li>- React</li>
